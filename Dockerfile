@@ -3,8 +3,9 @@ LABEL Author = 'Bhopathi Vardhan Kumar Reddy'
 LABEL Email = 'bhopathivardhan654321@gamil.com'
 RUN apt-get update
 RUN apt-get install -y apache2
-
-
+RUN apt-get install -y zip \
+unzip
+WORKDIR /var/www/html/
 
 
 
