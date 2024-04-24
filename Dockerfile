@@ -7,4 +7,4 @@ RUN apt-get install -y zip \
 unzip \
 wget
 WORKDIR /var/www/html/
-RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip -o /var/www/html
+RUN wget -o https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip
