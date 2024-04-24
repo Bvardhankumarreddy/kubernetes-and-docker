@@ -1,6 +1,10 @@
 FROM ubuntu:22.04
 LABEL Author = 'Bhopathi Vardhan Kumar Reddy'
 LABEL Email = 'bhopathivardhan654321@gamil.com'
+RUN apt-get install -y httpd \
+zip \
+unzip 
+WORKDIR /var/www/html/
 
 
 
