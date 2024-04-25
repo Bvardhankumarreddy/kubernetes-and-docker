@@ -8,4 +8,4 @@ unzip \
 wget \
 curl
 WORKDIR /var/www/html/
-RUN curl -L https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip --output /var/www/hmtl/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
