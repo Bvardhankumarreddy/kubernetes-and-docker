@@ -11,3 +11,4 @@ WORKDIR /var/www/html/
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip
 RUN pwd
 RUN ls -l
+RUN unzip photogenic.zip
