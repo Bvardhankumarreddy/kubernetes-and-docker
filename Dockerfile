@@ -1,23 +1,27 @@
+# Use Ubuntu 22.04 as the base image
 FROM ubuntu:22.04
 
 LABEL Author='Bhopathi Vardhan Kumar Reddy'
-LABEL Email='bhopathivardhan654321@gamil.com'
+LABEL Email='bhopathivardhan654321@gmail.com'
 
+# Update package lists and install required packages
 RUN apt-get update && \
     apt-get install -y httpd && \
     apt-get install -y zip \
                        unzip \
-                       wget 
+                       wget
 
+# Set the working directory
 WORKDIR /var/www/html/
 
+# Download and extract the zip file
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip && \
     unzip photogenic.zip && \
     cp -rvf photogenic/* . && \
     rm -rf photogenic photogenic.zip
 
-
-
+# Set the command to start Apache HTTP server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
+# Expose port 80
 EXPOSE 80
