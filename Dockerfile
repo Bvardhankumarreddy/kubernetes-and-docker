@@ -1,5 +1,5 @@
 # Use Ubuntu 22.04 as the base image
-FROM ubuntu:22.04
+FROM centos:latest
 
 LABEL Author='Bhopathi Vardhan Kumar Reddy'
 LABEL Email='bhopathivardhan654321@gmail.com'
