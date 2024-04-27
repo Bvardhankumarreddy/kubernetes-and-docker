@@ -5,11 +5,10 @@ LABEL Author='Bhopathi Vardhan Kumar Reddy'
 LABEL Email='bhopathivardhan654321@gmail.com'
 
 # Update package lists and install required packages
-RUN apt-get update && \
-    apt-get install -y httpd && \
-    apt-get install -y zip \
-                       unzip \
-                       wget
+RUN yum install -y httpd \
+ zip\
+ unzip\
+ wget
 
 # Set the working directory
 WORKDIR /var/www/html/
