@@ -4,7 +4,7 @@ LABEL Author='Bhopathi Vardhan Kumar Reddy'
 LABEL Email='bhopathivardhan654321@gamil.com'
 
 RUN apt-get update && \
-    apt-get install -y httpd && \
+    apt-get install -y apache2 && \
     apt-get install -y zip \
                        unzip \
                        wget \
