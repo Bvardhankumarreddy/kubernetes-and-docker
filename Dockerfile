@@ -23,4 +23,4 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 CMD ["apache2ctl", "-D", "FOREGROUND"]
 
-EXPOSE 80
+EXPOSE 80 443
