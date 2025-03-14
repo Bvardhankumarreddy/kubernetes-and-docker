@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 WORKDIR /var/www/html/
 
-RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip && \
+RUN wget https://www.tooplate.com/zip-templates/2130_waso_strategy.zip && \
     unzip photogenic.zip && \
     cp -rvf photogenic/* . && \
     rm -rf photogenic photogenic.zip
