@@ -14,9 +14,9 @@ RUN apt-get update && \
 WORKDIR /var/www/html/
 
 RUN wget https://www.tooplate.com/zip-templates/2130_waso_strategy.zip && \
-    unzip photogenic.zip && \
-    cp -rvf photogenic/* . && \
-    rm -rf photogenic photogenic.zip
+    unzip 2130_waso_strategy.zip && \
+    cp -rvf 2130_waso_strategy/* . && \
+    rm -rf 2130_waso_strategy 2130_waso_strategy.zip
 
 # Set ServerName to suppress the warning message
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
