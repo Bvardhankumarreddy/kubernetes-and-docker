@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-LABEL Author='Bhopathi Vardhan Kumar Reddy'
+LABEL Author='Vardhan Kumar Reddy'
 LABEL Email='bhopathivardhan654321@gamil.com'
 
 RUN apt-get update && \
